@@ -105,6 +105,8 @@ function resetGame(){
 	playerWins = 0; // only reference them, if var is placed in front of them they become part of the function and the counter will not reset.
 	computerWins = 0;
 	
+	document.getElementById('result').innerHTML = "Ready!";
+	document.getElementById('result').className = "alert alert-info text-center";
 	document.getElementById('playerWins').innerHTML = parseInt(playerWins,0).toString(); //Set starting values to the screen
 	document.getElementById('computerWins').innerHTML = parseInt(computerWins,0).toString(); //Set starting values to the screen
 	
