@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock, Paper, Scissors</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">  
+        <div class="page-header text-center">
+            <h1>Rock, Paper, Scissors</h1>
+        </div>      
+        <div class="game-board">
+            <div class="alert alert-info text-center" role="alert" id="result">Ready!</div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            <h4>Player Wins</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <span id="playerWins" class="total-wins"></span>  
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            <h4>Computer Wins</h4>
+                        </div>
+                        <div class="panel-body text-center">
+                            <span id="computerWins" class="total-wins"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-lg btn-primary" onclick="play('rock')"><i class="fa fa-hand-rock-o fa-5x" aria-hidden="true"></i></button>
+                <button class="btn btn-lg btn-primary" onclick="play('paper')"><i class="fa fa-hand-paper-o fa-5x" aria-hidden="true"></i></button>
+                <button class="btn btn-lg btn-primary" onclick="play('scissors')"><i class="fa fa-hand-scissors-o fa-5x" aria-hidden="true"></i></button>
+            </div>
+			<br>
+			<div class="text-center">
+				<button class="btn btn-md btn-default" onclick="resetGame()">New Game</button>
+			</div>
+        </div>    
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
